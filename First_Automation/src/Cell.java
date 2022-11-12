@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class First_Auto {
+public class Cell {
 //
 	@Test
 	public static void main(String[] args) throws InterruptedException {
@@ -21,7 +21,7 @@ public class First_Auto {
 		driver.get("https://demoqa.com/automation-practice-form");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.id("firstName")).sendKeys("");
+		driver.findElement(By.id("firstName")).sendKeys("Usman");
 		
 		driver.findElement(By.id("lastName")).sendKeys("Ali");
 		
@@ -30,7 +30,7 @@ public class First_Auto {
 		WebElement RadioButton = driver.findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[1]"));
 	    RadioButton.click();
 	    
-	    driver.findElement(By.id("userNumber")).sendKeys("0123456789");
+	    driver.findElement(By.id("userNumber")).sendKeys("012345678");
 	    
 	    driver.findElement(By.id("subjectsInput")).sendKeys("English");
 	    
@@ -88,7 +88,7 @@ public class First_Auto {
         //String color = driver.findElement(By.id("firstName")).getCssValue("border-color");
         //assertTrue(color.equals("rgb(220, 53, 69)"));
         
-        String color = driver.findElement(By.xpath("//*[@id=\"firstName\"]")).getCssValue("border-color");
+        String color = driver.findElement(By.xpath("//*[@id=\"userNumber\"]")).getCssValue("border-color");
         String[] numbers = color.replace("rgb(", "").replace(")", "").split(",");
         int r = Integer.parseInt(numbers[0].trim());
         int g = Integer.parseInt(numbers[1].trim());
@@ -100,7 +100,7 @@ public class First_Auto {
         //String color = driver.findElement(By.id("firstName")).getCssValue("border-color");
         AssertJUnit.assertTrue(hex.equals("#dc3545"));
         
-        String img = driver.findElement(By.id("firstName")).getCssValue("background-image");
+        String img = driver.findElement(By.id("userNumber")).getCssValue("background-image");
         AssertJUnit.assertTrue(img.equals("url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e\")"));
         
         
