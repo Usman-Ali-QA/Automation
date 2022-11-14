@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="Cell"/>
+      <class name="LastName"/>
       <class name="First_Auto"/>
+      <class name="Gender"/>
+      <class name="Email"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="automationexample.LastName">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- automationexample.LastName -->
+      <class name="automationexample.Email">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- automationexample.Email -->
+      <class name="automationexample.Cell">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- automationexample.Cell -->
+      <class name="automationexample.Gender">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- automationexample.Gender -->
+      <class name="automationexample.First_Auto">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- automationexample.First_Auto -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
