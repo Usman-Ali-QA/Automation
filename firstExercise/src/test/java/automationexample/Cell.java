@@ -1,5 +1,5 @@
 package automationexample;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import java.time.Duration;
@@ -16,7 +16,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Cell {
 //dd
 	@Test
-	public static void main(String[] args) throws InterruptedException {
+	//public static void main(String[] args) throws InterruptedException {
+		public void test() throws InterruptedException {
 		// TODO Auto-generated method stub
 		//ChromeDriver driver = new ChromeDriver();
 		WebDriver driver = new ChromeDriver();
